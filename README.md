@@ -37,7 +37,7 @@ Dans un second terminal, simuler une panne d’un des conteneurs :
 Observation
 Vérifier si les conteneurs restants (api1 et api3) prennent automatiquement le relais dans la rotation.
 
-Si oui : le failover fonctionne correctement ✔
+Si oui : le failover fonctionne correctement
 Si non : il y a un problème de configuration du load balancer
 Réintégration du service
 

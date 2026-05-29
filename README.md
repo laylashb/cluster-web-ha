@@ -27,23 +27,25 @@ HAProxy (load balancer)
 
 ## Test du failover
 
-Pour tester le mécanisme de failover, exécuter la commande suivante afin de simuler un flux continu vers le load balancer : **while true; do curl -s http://localhost; done**
+Ouvrir 3 terminals :
 
-Laisser la commande s’exécuter.
+1er terminal :
 
-Dans un second terminal, simuler une panne d’un des conteneurs : **docker stop api2**
+Pour tester le mécanisme de failover, exécuter la commande suivante afin de simuler un flux continu vers le load balancer : **while true; do curl -s http://localhost; done**. Laisser la commande s’exécuter.
+
+2e terminal : 
+
+Simuler une panne d’un des conteneurs : **docker stop api2**
 
 Observation
 Vérifier si les conteneurs restants (api1 et api3) prennent automatiquement le relais dans la rotation.
-
 Si oui : le failover fonctionne correctement
-
 Si non : il y a un problème de configuration du load balancer
-Réintégration du service
 
 
-Relancer le conteneur arrêté :
-**docker start api2**
+3e terminal : 
+On réintègre du service
+Relancer le conteneur arrêté : **docker start api2**
 
 Observer ensuite sa réintégration automatique dans la rotation du load balancing.
 

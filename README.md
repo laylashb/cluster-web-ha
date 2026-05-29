@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-Crée un `README.md` contenant :
-1. Ton nom + date
-2. Schéma (ASCII) de l'architecture déployée
-3. Comment lancer le cluster
-4. Comment tester le fail-over
-5. Difficultés rencontrées
-
 Layla Shabi
 29/05/2026
 

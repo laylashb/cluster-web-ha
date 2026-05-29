@@ -1,4 +1,4 @@
-#Questions Partie 1
+# Questions Partie 1
 ## Question 1.1
 SPOF, single point of failure est l'acronyme qui désigne l'élément dont toute l'architecture du SI dépend, et donc lorsqu'il se passe une casse, panne, alors la défaillance entraine l'arrêt global du système.
 
@@ -41,7 +41,7 @@ API SERVER 3
 
 
 
-Questions Partie 3
+# Questions Partie 3
 
 **docker rm -f haproxy-streamflix**
 haproxy-streamflix
@@ -61,7 +61,7 @@ haproxy-streamflix
       8 API SERVER 3
 
 
-Questions Partie 4
+# Questions Partie 4
 
 J'ai lancé une boucle while :
 **while true; do
@@ -80,7 +80,7 @@ ca a mit 5sc a fonctionner
 
 
 
-Question Partie 5
+# Question Partie 5
 
 **./deploy.sh start
 ./deploy.sh status

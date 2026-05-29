@@ -53,10 +53,15 @@ Observer ensuite sa réintégration automatique dans la rotation du load balanci
 ## Difficultés rencontrées :
 
 1-conflit de ports 
+
 Il est possible que, lors de la création d’un conteneur, le port soit déjà utilisé par un autre service. Dans ce cas, il est nécessaire soit de supprimer le conteneur ou le service qui utilise ce port, soit de modifier le port d’exposition afin d’éviter le conflit.
 
+
 2- Conflits de noms de conteneurs
+
 Lors de plusieurs relances du TP, des conteneurs portant déjà les mêmes noms existaient, ce qui empêchait leur recréation. Une suppression préalable des anciens conteneurs a été nécessaire.
 
+
 3- Configuration haproxy.cfg défaillante
+
 Une mauvaise configuration du fichier haproxy.cfg (syntaxe invalide ou commandes non supportées) empêchait le démarrage du service.

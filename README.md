@@ -33,6 +33,7 @@ Ouvrir 3 terminals :
 
 Pour tester le mécanisme de failover, exécuter la commande suivante afin de simuler un flux continu vers le load balancer : **while true; do curl -s http://localhost; done**. Laisser la commande s’exécuter.
 
+
 2e terminal : 
 
 Simuler une panne d’un des conteneurs : **docker stop api2**
@@ -44,8 +45,8 @@ Si non : il y a un problème de configuration du load balancer
 
 
 3e terminal : 
-On réintègre du service
-Relancer le conteneur arrêté : **docker start api2**
+
+On relance le conteneur arrêté : **docker start api2**
 
 Observer ensuite sa réintégration automatique dans la rotation du load balancing.
 
